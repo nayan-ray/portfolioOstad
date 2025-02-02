@@ -7,6 +7,7 @@ const rateLimit = require("express-rate-limit");
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const Router = require('./routes/api');
+const { errorResponse } = require('./controllers/responseHandler');
 
 
 
