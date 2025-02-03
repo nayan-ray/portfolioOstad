@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken';
+
 const jwt = require('jsonwebtoken');
  //creating token
 const createToken = (payload, secretKey, expiresIn)=>{
@@ -25,4 +25,6 @@ const createToken = (payload, secretKey, expiresIn)=>{
    }
 }
 
-module.exports = createToken;
+
+
+module.exports = createToken;  //exporting the function

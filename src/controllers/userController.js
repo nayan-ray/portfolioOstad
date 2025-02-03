@@ -44,4 +44,8 @@ const deleteUserHandler = async (req, res) => {
       return res.status(500).json({ message: error.message });
   }
 }
+
+
+
+
 module.exports = {getUserHandler, postUserHandler, updateUserHandler, deleteUserHandler};

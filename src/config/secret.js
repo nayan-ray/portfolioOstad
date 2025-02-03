@@ -1,13 +1,11 @@
 
-const dotenv = require("dotenv");
-dotenv.config();
+// const dotenv = require("dotenv");
+// dotenv.config();
 
-const server_port = process.env.SERVER_PORT || 3002;
-const Mongo_connect_url = process.env.ATLAS_URL;
-const smtpUser = process.env.SMTP_USERNAME;
-const smtpPassword = process.env.SMTP_PASSWORD;
+const server_port = 3002;
+const secretKey ="lkdjfsdlfskdfjsldfjsldfkdf"
 
 
-module.exports = {server_port}
+module.exports = {server_port, secretKey};  // export the object
 
 
