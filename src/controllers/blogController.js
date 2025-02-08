@@ -14,7 +14,7 @@ const getBlogHandler = async (req, res) => {
 const postBlogHandler = async (req, res) => {
   try {
     const blog = await postBlogService(req);
-    return successResponse(res, {payload : blog})
+    return successResponse(res, {statusCode :200 ,payload : blog})
       
   } catch (error) {
       return res.status(500).json({ message: error.message });
