@@ -17,7 +17,7 @@ const limiter = rateLimit({
 	message :"to many requested from this ip"
 	
 });
-app.use(cors())
+app.use(cors({ origin: true, credentials: true }));
 app.use(cookieParser());
 app.use(limiter);
 app.use(morgan("dev"));

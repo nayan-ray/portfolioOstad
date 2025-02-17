@@ -27,11 +27,11 @@ const loginHandler = async(req, res, next)=>{
    
     //set token in cookie
     res.cookie("access_token", loginToken, {
-        httpOnly: true,
+        httpOnly: false,
         maxAge: 1000 * 60 * 60 * 24, // 24 hours
 
         // secure: true,
-        sameSite : "none"
+        // sameSite : "none"
     })
    
     return successResponse(res,{

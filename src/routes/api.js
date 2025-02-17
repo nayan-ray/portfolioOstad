@@ -11,7 +11,7 @@ const Router = require('express').Router();
 
 Router.get("/blog",  getBlogHandler)
 Router.post("/blog/create", postBlogHandler)
-Router.put("/blog/:id", updateBlogHandler)
+Router.put("/blog/:id",isLoggedIn, updateBlogHandler)
 Router.delete("/blog/delete/:id", deleteBlogHandler)
 
 //service api
